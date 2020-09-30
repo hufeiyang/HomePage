@@ -31,4 +31,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //引入本地module_home，在app module中独立调试使用
+    implementation project(path: ':module_home')
+    //引入module_home依赖组件的实现
+    implementation 'com.github.hufeiyang.Cart:module_cart:1.0.4'
+
 }
