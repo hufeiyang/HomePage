@@ -23,11 +23,13 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //通过路由跳转到 购物车组件的购物车页面（但没有依赖购物车组件）
-                ARouter.getInstance()
-                        .build("/cart/cartActivity")
-                        .withString("key1","value1")//携带参数1
-                        .withString("key2","value2")//携带参数2
-                        .navigation();
+//                ARouter.getInstance()
+//                        .build("/cart/cartActivity")
+//                        .withString("key1","param1")//携带参数1
+//                        .withString("key2","param2")//携带参数2
+//                        .navigation();
+
+                CartServiceUtil.navigateCartPage("param1", "param1");
             }
         });
 
