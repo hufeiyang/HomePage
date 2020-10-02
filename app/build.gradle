@@ -34,7 +34,7 @@ dependencies {
 
     //引入本地Common组件、module_cart、module_home，在app module中独立调试使用
     implementation 'com.github.hufeiyang:Common:1.0.0'
-    implementation 'com.github.hufeiyang.Cart:module_cart:1.0.6'
+    implementation 'com.github.hufeiyang.Cart:module_cart:1.0.9'
 
     implementation project(path: ':module_home')
 

@@ -31,9 +31,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="购物车商品数量"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fl_test_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_go_cart" />
+
+    <FrameLayout
+        android:id="@+id/fl_test_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cart_product_count"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#009999"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
